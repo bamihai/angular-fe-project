@@ -1,0 +1,89 @@
+.main {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 95%;
+  height: 152px;
+  border-radius: 3px;
+  border: 1px solid #f1f1f3;
+  border-left-width: 5px;
+  box-shadow: 0px 2px 5px #d5d5d8;
+  margin-top: 3%;
+}
+
+p {
+  margin-top: 9px;
+  height: 3px;
+  margin-left: 10px;
+}
+
+.clock {
+  margin-left: 10px;
+  display: block;
+  opacity: 0.4;
+}
+
+label {
+  color: white;
+  margin-left: 4px;
+  background-color: #dc5151;
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-size: 14px;
+}
+
+.second {
+  margin-top: 16px;
+  border: 1px solid #f1f1f3;
+  width: 100%;
+  height: 41px;
+  background-color: #FAFAFA;
+}
+
+.clock-tiny {
+  font-size: 12px;
+}
+
+.image-tiny {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.text {
+  display: inline;
+  font-size: 13px;
+}
+
+.arrow {
+  float: right;
+  margin-right: 10px;
+}
+
+.arrow::after {
+  content: '';
+  display: block;
+  clear: right;
+}
+
+.margin {
+  margin-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 94%;
+  color: white;
+}
+
+:host .green-border {
+  border-left-color: #4CAF50;
+}
+
+:host .blue-border {
+  border-left-color: #2196F3;
+}
+
+:host .orange-border {
+  border-left-color: #ff9800;
+}

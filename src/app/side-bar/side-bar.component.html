@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col s4">
+    <div class="src-Navigation-fixed-position src-Navigation-wrap-navigation">
+      <div class="src-Navigation-mobile-navigation ">
+        <ul class="src-Navigation-navigation first">
+          <li class="src-Navigation-navigation-item logo"><a class="oval">
+              <img class="logoImage" src="../../assets/logo.png" alt=""></a>
+            <div *ngIf="showForm==false" class="appName">TASK SCHEDULER</div>
+          </li>
+          <li *ngFor="let icon of icons" class="src-Navigation-navigation-item">
+            <app-sidebar-buttons [icon]="icon.iconName"></app-sidebar-buttons>
+            <div *ngIf="showForm==false">{{icon.title}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

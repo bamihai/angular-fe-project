@@ -1,0 +1,26 @@
+<div class="row layer">
+  <div class="col l1 left">
+    <app-side-bar></app-side-bar>
+  </div>
+
+  <div class="col l11 right" [@openCloseComponents]="showForm ? 1 : 0">
+    <div class="topHeader row">
+      <div class="col l10 ">
+        <app-search></app-search>
+      </div>
+
+      <div class="col l2 right margin">
+        <div class="left border">
+          <app-notification></app-notification>
+        </div>
+
+        <div class="right">
+          <app-user-info></app-user-info>
+        </div>
+      </div>
+    </div>
+    <div class="col l12">
+      <app-add-task></app-add-task>
+    </div>
+  </div>
+</div>

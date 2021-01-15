@@ -1,0 +1,58 @@
+.addNewTaskButton {
+  border-radius: 5px;
+  background-color: #dc5151;
+  color: white;
+  padding: 5%;
+  border: 0;
+  outline: 0;
+  width: 9em;
+  height: 3em;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  float: right;
+}
+
+.addNewTaskButton:clicked {
+  background-color: #dc5151;
+}
+
+.projectNameStyle {
+  color: #78839b;
+  font-family: Roboto;
+  letter-spacing: normal;
+  font-size: 0.8em;
+  margin-top: 0;
+  font-weight: 300;
+  padding-left: 3px;
+}
+
+.boardStyle {
+  font-family: Roboto;
+  font-size: 2em;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.cardContainer {
+  padding: 0.6em 0.8em 1.5em;
+  margin-right: 0em;
+  line-height: 1;
+}
+
+i.left {
+  margin-right: 0;
+}
+
+.row {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.material-icons {
+  font-size: 110%;
+}
+
+.arrow {
+  font-size: 70%;
+  margin-left: 2%;
+}

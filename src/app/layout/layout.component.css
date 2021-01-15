@@ -1,0 +1,66 @@
+.layer {
+  height: 100vh;
+}
+
+.top {
+  height: 10vh;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+.topHeader {
+  height: 60px;
+  border-bottom: 1px solid #ebebed;
+}
+
+.search {
+  height: 100%;
+  width: 100%;
+
+}
+
+input {
+  text-decoration: none;
+}
+
+
+.headerTop {
+  height: 100px;
+  margin-top: -50px;
+}
+
+.margin {
+  margin: 0;
+  display: inline-block;
+}
+
+.margin::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.border {
+  border-left: 1px solid #ebebed;
+  border-right: 1px solid #ebebed;
+}
+
+.row .col.l1 {
+  width: 0;
+}
+
+.open {
+  width: 85em;
+}
+
+.close {
+  width: 97em;
+}

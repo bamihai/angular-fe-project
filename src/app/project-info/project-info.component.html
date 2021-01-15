@@ -1,0 +1,16 @@
+<div class="white">
+  <div class="row cardContainer">
+    <div class="col s2 m2 l2 left">
+      <span class="boardStyle">Board<i class="material-icons arrow">keyboard_arrow_down</i></span><br>
+      <span class="projectNameStyle">{{projectName}}</span>
+    </div>
+
+    <div class="col s2 m2 l2 right" *ngIf="showForm ==false">
+      <button class="addNewTaskButton" (click)="onAddButtonClicked(); onSendFormType($event)">
+        <i class="material-icons left ">add</i>
+        Add new task
+      </button>
+    </div>
+
+  </div>
+</div>

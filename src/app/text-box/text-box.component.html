@@ -1,0 +1,31 @@
+<div>
+  <div [ngClass]="['main','dot1', borderClass ]">
+    <div>
+      <div class="right top">
+        <app-dropdown [id]="taskId" (clicked)="showForm($event)" (deleteClicked)="onDeleteClicked($event)"></app-dropdown>
+      </div>
+      <p><b>{{childMessage.name}}</b></p>
+    </div>
+    <div *ngIf="showModal">
+      <app-modal-component [formId]="formId" (deleteAborted)="onDeleteAborted($event)"></app-modal-component>
+    </div>
+
+    <div class="clock">
+      <span class="text">
+        <i class="material-icons clock-tiny">access_time</i>
+        {{childMessage.startDate.substr(0,10) | date}}
+      </span>
+    </div><br>
+
+    <div class="label margin">
+      <span *ngFor="let label of childMessage.labels">
+        <label>{{label}}</label>
+      </span>
+    </div>
+
+    <div class="second">
+      <img src="/src/assets/avatar@3x.png" alt="avatar" class="image-tiny">
+      <p class="text">TS-{{childMessage.id}}</p>
+    </div>
+
+  </div>

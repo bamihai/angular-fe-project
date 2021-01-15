@@ -1,0 +1,9 @@
+<app-project-info></app-project-info>
+<div>
+  <div class="left">
+    <app-task (taskInfo)="showTask($event)"></app-task>
+  </div>
+</div>
+<div [@openClose]="showForm ? 'open' : 'close'" class="right">
+  <app-task-forms [editFormData]="taskToEdit"></app-task-forms>
+</div>

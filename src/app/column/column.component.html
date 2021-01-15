@@ -1,0 +1,10 @@
+<div class="main">
+  <app-column-header [title]="columnTitle" [className]="columnClass"></app-column-header>
+  <div>
+    <div *ngFor="let task of tasks">
+      <div *ngIf="tasks!==undefined">
+        <app-text-box (showEdit)="onShowEdit($event)" [childMessage]="task" [borderClass]="borderClass" [taskId]="task.id"></app-text-box>
+      </div>
+    </div>
+  </div>
+</div>

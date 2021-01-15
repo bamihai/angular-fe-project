@@ -1,0 +1,41 @@
+.cardContainer {
+  padding: 0.5em;
+}
+
+.cardContainerName {
+  font-size: 1em;
+  margin-bottom: 2%;
+  color: #2f3645;
+  margin-top: 6%;
+  line-height: 1;
+  font-family: Roboto;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+
+.cardContainerPosition {
+  font-size: 0.6em;
+  font-weight: bold;
+  margin: 1% 0;
+  font-family: 'Roboto Condensed';
+  color: #78839b;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.border {
+  border: solid 1px #ebebed;
+  padding: 5%;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+}

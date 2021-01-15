@@ -1,0 +1,265 @@
+input {
+  border: 1px solid #d5d5d8;
+  border-radius: 3px;
+  height: 2em;
+  margin-bottom: 0;
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+  padding-left: 5px;
+}
+
+select {
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+  border: 1px solid #d5d5d8;
+  border-radius: 3px;
+  height: 2em;
+  cursor: pointer;
+}
+
+textarea {
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+  padding-left: 5px;
+  outline: none;
+  width: 17.7em;
+}
+
+input:focus {
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+}
+
+textarea:focus {
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+}
+
+.inputType {
+  border: 1px solid #d5d5d8;
+  border-radius: 3px;
+  height: 2em;
+  margin-bottom: 0;
+  border: 1px solid #d5d5d8;
+  border-radius: 3px;
+  height: 2em;
+  margin-bottom: 0;
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+
+:host .inputType:focus {
+  border-bottom-color: #d5d5d8;
+  box-shadow: none;
+}
+
+::ng-deep .input-field {
+  height: 2em;
+  margin-top: -0.6rem;
+}
+
+::ng-deep input[type=text]:not(.browser-default) {
+  border-bottom: none
+}
+
+input:focus {
+  border-bottom-color: #d5d5d8 !important;
+  box-shadow: none !important;
+}
+
+textarea {
+  border: 1px solid #d5d5d8;
+  border-radius: 3px;
+  height: 5em;
+}
+
+label {
+  color: #2f3645;
+  font-family: 'Roboto Condensed';
+  font-weight: 600;
+}
+
+.card {
+  padding: 1em 2em;
+}
+
+.material-icons {
+  margin: 0 6px;
+}
+
+.addTaskButton {
+  border-radius: 5px;
+  background-color: #dc5151;
+  color: white;
+  padding: 3%;
+  border: 0;
+  outline: 0;
+  width: 38%;
+  height: 3em;
+  font-size: 0.9em;
+  margin-bottom: 20% !important;
+  margin-left: 4%;
+  margin-top: -10px;
+  z-index: -100;
+}
+
+.updateTaskButton {
+  width: 46%;
+  line-height: 1.7;
+}
+
+.calendarIcon {
+  float: right;
+  margin-top: -3.3em;
+  margin-right: -0.4em;
+  position: inherit;
+  color: #78839b;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.invalid {
+  font-size: 0.8em;
+  color: #dc5151;
+}
+
+.warning {
+  font-size: 0.8em;
+  margin-bottom: 2px;
+  color: #d5d5d8;
+}
+
+.taskFormsTitle {
+  margin-bottom: 1.7em;
+  font-weight: 600;
+  font-family: 'Roboto Condensed';
+}
+
+.border {
+  border: 1px solid #d5d5d8;
+  padding: 5%;
+  box-shadow: -2px 2px 5px #d5d5d8;
+  margin-right: 0;
+}
+
+::ng-deep .chip {
+  background-color: #dc5151;
+  border-radius: 3px;
+  color: white;
+  padding: 0 8px;
+  margin-bottom: 7px;
+  height: 2.3em;
+}
+
+::ng-deep .chips .input {
+  position: relative;
+  border: 1px solid #d5d5d8;
+  box-shadow: none;
+  border-radius: 3px;
+  height: 2em;
+  margin-bottom: 0;
+  display: inline-block;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 32px;
+  outline: 0;
+  padding: 0 !important;
+  width: 17em !important;
+  height: 2em;
+  margin-bottom: 0;
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+  padding-left: 5px !important;
+}
+
+::ng-deep .chips .input:focus {
+  position: relative;
+  border: 1px solid #d5d5d8 !important;
+  box-shadow: none;
+  border-radius: 3px;
+  height: 2em;
+  margin-bottom: 0;
+  display: inline-block;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 32px;
+  outline: 0;
+  padding: 0 !important;
+  width: 17em !important;
+  height: 2em;
+  margin-bottom: 0;
+  box-shadow: inset 0 0 12px -3px #d5d5d8;
+  padding-left: 5px !important;
+}
+
+::ng-deep .chip .close {
+  display: none;
+}
+
+::ng-deep .chips .chip.selected {
+  background-color: gray;
+}
+
+.pointerCursor {
+  cursor: pointer;
+}
+
+:host .chips.focus {
+  border-bottom: #d5d5d8;
+  box-shadow: none;
+}
+
+:host .chips {
+  margin-bottom: 3px;
+  box-shadow: none;
+  border-bottom-color: white;
+  min-height: 0;
+
+}
+
+.checkStyle {
+  font-size: 150%;
+}
+
+.statusStyle {
+  display: block;
+  margin-top: -18px;
+}
+
+.marginBottom {
+  margin-bottom: -2em;
+}
+
+.input-margin {
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+::ng-deep .black {
+  width: 500px;
+  height: 70px;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+::ng-deep .check-color {
+  color: green;
+  position: relative;
+  top: 5px;
+}
+
+::ng-deep #toast-container {
+  margin: 0 auto;
+  right: 500px;
+  top: 60px;
+}
+
+::ng-deep .check-colour {
+  color: red;
+  position: relative;
+  top: 5px;
+}
+
+.space {
+  height: 4.7em;
+}
+
+.textStyle{
+  font-size: 1.2em;
+  font-weight: 500;
+}

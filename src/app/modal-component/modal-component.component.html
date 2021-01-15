@@ -1,0 +1,15 @@
+<mz-modal class="test">
+  <mz-modal-content>
+    <div class="center-align ">
+      <i class="large material-icons">warning</i>
+      <p>Are you sure you want to delete task?</p>
+    </div>
+  </mz-modal-content>
+
+  <mz-modal-footer>
+    <div class="right-align ">
+      <button class="button2" mz-button mz-modal-close (click)="onDeleteAborted($event)">NO</button>
+      <button class="button1" mz-button mz-modal-close (click)="deleteTask(id)">YES</button>
+    </div>
+  </mz-modal-footer>
+</mz-modal>

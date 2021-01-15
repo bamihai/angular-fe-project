@@ -1,0 +1,86 @@
+.logo {
+    width: 55px;
+    height: 55px;
+}
+.oval {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #dc5151;
+    padding-top: 17px;
+  }
+  .appName {
+    width: 406px;
+    height: 48px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+  }
+  .pos { 
+      padding-top:50px;
+
+  }
+  .text { 
+    color: #78839b;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 521px;
+    height: 30px;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 27px;
+    padding-top: 13px;
+}
+  .Illustration-1 {
+    width: 311px;
+    height: 228px;
+    padding-right: 79px;
+    padding-left: 30px;
+  }
+  .center {
+      margin: 0 auto;
+  }
+  .car-item {
+      margin-left:12px;
+      padding-left:18px;
+      width: 20px;
+      height: 21px;
+      border-radius:50px;
+      border: 2px solid #78839b;
+  }
+  .car-item1 {
+    background-color:#dc5151;
+    margin-left:12px;
+    padding-left:18px;
+    width: 20px;
+    height: 21px;
+    border-radius:50px;
+    border: 2px solid #78839b;
+  }
+  .button {
+      border-radius:3px;
+      color:white;
+      width:250px;
+      height:50px;
+      background-color:#dc5151;
+      border-style:none;
+  }
+  .button-pos {
+      padding-top:30px;
+  }
+  li{
+      display:inline-block;
+  }
+  ul {
+      padding-right:15px;
+      
+  }
+  .user-name {
+    font-size: 15px;
+  }
+  .bg-black {
+      width:100vw;
+      height:100vh;
+      background-color:#2f3645;
+  }

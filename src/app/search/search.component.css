@@ -1,0 +1,29 @@
+input[type=search]:not(.browser-default) {
+    width:100%;
+    height:59px;
+    font-size: 16px;
+    margin:0 auto;
+    border-width: 0; 
+}
+.input-container {
+    display: flex;
+}
+
+.borders { 
+    height:60px;
+    border:1px solid #ebebed;
+    border-right-style: none;
+}
+
+i {
+    margin-top:5px;
+    font-size: 32px;
+    padding:9px;
+    padding-left: 14px;
+    color: #78839b;
+}
+
+.input-container input[type=search]:focus {
+    border-bottom: none;
+    box-shadow: none;
+    }

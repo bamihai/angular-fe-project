@@ -1,0 +1,55 @@
+[{
+    "id":"1",
+    "name": "Task 1",
+    "description": "Task foarte important",
+    "startDate": "10.10.2018",
+    "endDate": "-",
+    "labels": ["FE", "QA", "UX"],
+    "status": "TODO"
+  },
+  {
+    "id":"2",
+    "name": "Task 2",
+    "description": "Task normal",
+    "startDate": "2018-12-12 07:20",
+    "endDate": "2018-12-14 20:00",
+    "labels": ["LBL", "AV", "RR"],
+    "status": "DONE"
+  },
+  {
+      "id" :"3",
+    "name": "Task 3",
+    "description": "Task cu prioritate mica",
+    "startDate": "2018-03-10 09:45",
+    "endDate": "2018-03-23 16:55",
+    "labels": ["CV", "AX"],
+    "status": "PROGRESS"
+  },
+  {
+      "id":"4",
+    "name": "Task 4",
+    "description": "Task cu prioritate mica",
+    "startDate": "2018-01-01 20:20",
+    "endDate": "2018-01-01 23:31",
+    "labels": ["CV", "AX", "XL"],
+    "status": "TODO"
+  },
+  {
+      "id":"5",
+    "name": "Task 5",
+    "description": "Task cu prioritate mica,poate fi neglijat",
+    "startDate": "2018-08-22 14:00",
+    "endDate": "2018-08-29 14:50",
+    "labels": ["CV", "AX", "XL"],
+    "status": "DONE"
+  },
+  {
+      "id":"6",
+    "name": "Task 6",
+    "description": "Task cu prioritate mare",
+    "startDate": "2018-10-10 14:50",
+    "endDate": "2018-10-10 14:51",
+    "labels": ["FX", "AX", "XL"],
+    "status": "DONE"
+  }
+]

@@ -1,0 +1,7 @@
+.main {
+  border: 1px solid #ebebed;
+  border-bottom: none;
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+}

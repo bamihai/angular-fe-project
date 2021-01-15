@@ -1,0 +1,20 @@
+<mz-dropdown #dropdown [id]="id" [align]="'left'" [belowOrigin]="true" [constrainWidth]="true" [dropdownButtonId]="'btn-dropdown-demo-'+id"
+  [gutter]="true" [hover]="false" [inDuration]="300" [outDuration]="300" [stopPropagation]="true">
+
+  <mz-dropdown-item class="drop"><span class="text">TS-{{id}}</span></mz-dropdown-item>
+  <mz-dropdown-divider></mz-dropdown-divider>
+  <mz-dropdown-item (click)="editFunction()"><i class="tiny material-icons icon-border">edit</i> Edit</mz-dropdown-item>
+  <mz-dropdown-item (click)="deleteFunction()"><i class="tiny material-icons icon-border">delete</i> Delete</mz-dropdown-item>
+</mz-dropdown>
+
+<div class="dropdownAlign">
+  <button class="button1 con" mz-button id="btn-dropdown-demo-{{id}}" (click)="expandDropdown($event)" (blur)="expandDropdown($event)">
+    <span *ngIf="view; else hide">
+      <i class="tiny material-icons icon-border2">expand_less</i>
+    </span>
+    <ng-template #hide>
+      <i class="tiny material-icons icon-border2">expand_more</i>
+    </ng-template>
+  </button>
+  <div class="arrow-up" *ngIf="view; else hide"></div>
+</div>

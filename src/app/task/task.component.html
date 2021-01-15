@@ -1,0 +1,5 @@
+<div [ngClass]=" {'open':showForm, 'close' :!showForm}">
+<app-column  (taskId) = "showId($event)"    [tasks]="ToDoTasks" [columnTitle]="'TODO'" [columnClass]="'blue'" [borderClass]="'blue-border'"> </app-column>
+<app-column  (taskId) = "showId($event)"   [tasks]="InProgressTasks" [columnTitle]="' IN PROGRESS'" [columnClass]="'orange'" [borderClass]="'orange-border'"></app-column>
+<app-column  (taskId) = "showId($event)"   [tasks]="DoneTasks" [columnTitle]="'DONE'" [columnClass]="'green'" [borderClass]="'green-border'"></app-column>
+</div>

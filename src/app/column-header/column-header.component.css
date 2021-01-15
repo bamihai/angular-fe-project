@@ -1,0 +1,39 @@
+.main {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  border: 1px solid#f1f1f3;
+  background-color: #fafafa;
+}
+
+i {
+  float: right;
+  margin-top: 12px;
+}
+
+i::after {
+  content: '';
+  display: block;
+  clear: right;
+}
+
+i::after {
+  content: '';
+  display: block;
+  clear: right;
+}
+
+.dot1 {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+p {
+  display: inline-block;
+  margin-right: 10px;
+}

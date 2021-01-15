@@ -1,0 +1,100 @@
+<div class="border white">
+
+  <div class="left taskFormsTitle" [ngSwitch]="type">
+    <div *ngSwitchCase="'add'">
+      <i class="material-icons left ">add </i>
+      <span class="textStyle">Add new task</span>
+    </div>
+    <div *ngSwitchCase="'edit'">
+      <i class="material-icons left ">create </i>
+      <span class="textStyle"> Edit task</span>
+    </div>
+  </div>
+  <div class="right pointerCursor" (click)="closeForm()"><i class="material-icons right ">close</i></div>
+
+  <form [formGroup]="forms">
+
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <label>Title:</label><br>
+        <input formControlName="name"><br>
+        <span [class.invalid]="name.invalid" *ngIf="name.invalid && (name.touched || formSubmited==true)">
+          Title is invalid
+        </span><br>
+
+        <label>Description:</label><br>
+        <textarea formControlName="description"></textarea><br>
+        <span [class.invalid]="description.invalid" *ngIf="description.invalid && (description.touched || formSubmited==true)">
+          Description is invalid
+        </span><br>
+      </div>
+
+      <div class="col s6 m6 l6 space">
+        <label>Start Date:</label><br>
+         <mz-datepicker-container class="col s12 inputType" >
+                <input mz-datepicker
+                  [options]="optionsStartDate"
+                  formControlName="startDate"
+                  id="datepicker"
+                  placeholder=""
+                  type="text">
+                  <i class="material-icons calendarIcon">calendar_today</i>
+         </mz-datepicker-container>
+        <p [class.invalid]="startDate.invalid" *ngIf="startDate.invalid && (startDate.touched || formSubmited==true)">
+          Date is invalid
+        </p><br>
+      </div>
+
+      <div class="col s6 m6 l6">
+        <label>End Date:</label><br>
+        <mz-datepicker-container class="col s12 inputType" >
+               <input mz-datepicker
+                 [options]="optionsEndDate"
+                 id="datepicker"
+                 placeholder=""
+                 formControlName="endDate"             
+                 type="text">
+                 <i class="material-icons calendarIcon">calendar_today</i>
+        </mz-datepicker-container>
+        <span [class.invalid]="endDate.invalid" *ngIf="endDate.invalid && (endDate.touched || formSubmited==true)">
+          Date is invalid
+        </span><br>
+      </div>
+
+      <div class="col s12 m12 l12 marginBottom">
+        <label>Labels:</label><br>
+        <mz-chip-input formControlName="labels"></mz-chip-input>
+        <span [class.invalid]="labels.invalid" *ngIf="labels.invalid && (labels.touched || formSubmited==true)">
+          Labels is invalid
+          </span><br> 
+
+        <label>Status:</label>
+        <select formControlName="status" class="browser-default">
+          <option value="TODO" selected>To do</option>
+          <option value="PROGRESS">In progress</option>
+          <option value="DONE">Done</option>
+        </select><br>
+        <span class="statusStyle" [class.invalid]="status.invalid" *ngIf="status.invalid && (status.touched || formSubmited==true)">
+          Status is invalid
+        </span><br>
+      </div>
+    </div>
+  </form>
+  <div>
+
+    <div [ngSwitch]="type">
+      <div *ngSwitchCase="'add'">
+        <button class="addTaskButton" (click)="addTask()">
+          <i class="material-icons left checkStyle">check</i>
+          Add task
+        </button>
+      </div>
+      <div *ngSwitchCase="'edit'">
+        <button class="addTaskButton updateTaskButton" (click)="updateTask($event)">
+          <i class="material-icons left ">check</i>
+          Update task
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
